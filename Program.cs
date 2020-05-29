@@ -6,7 +6,13 @@ namespace Aula06Heranca
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            CPF pessoa = new CPF();
+            pessoa.nome = "João";
+            pessoa.rg = "52.270.623-X";
+            pessoa.cpf = "528.891.318-82";
+            Console.WriteLine(pessoa.Saudar());
+            Console.WriteLine(pessoa.ValidarCPF());
+
         }
     }
 }
